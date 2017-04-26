@@ -1,0 +1,81 @@
+---
+title: "Build standard input matrix for heatmaps"
+author: "E. Roberson"
+created: "April 5, 2017"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r setup_parameters}
+row_num <- 50
+col_num <- 150
+
+num_col_classes <- 5
+num_row_classes <- 2
+
+if ( num_col_classes > length( LETTERS ) ) {
+	stop( paste0( "Number of sample classes (", num_col_classes, ") greater than length of alphabet (", length( LETTERS ), ")" ) )
+}
+
+if ( num_row_classes > length( LETTERS ) ) {
+	stop( paste0( "Number of gene classes (", num_row_classes, ") greater than length of alphabet (", length( LETTERS ), ")" ) )
+}
+```
+
+```{r build_classes_blank_matrices}
+gene_abundances <- sample( c(1:10000), size=num_row_classes )
+sample_factors <- sample( seq( 0.01, 2.5, by=0.01 ), size=num_col_classes )
+
+heatmap_matrix <- matrix( nrow=row_num, ncol=col_num, NA )
+
+gene_matrix <- heatmap_matrix
+
+sample_matrix <- heatmap_matrix
+
+gene_classes <- factor( sample( x=LETTERS[ seq(1:num_row_classes) ], size=row_num, replace=TRUE ) )
+
+sample_classes <- factor( sample( x=LETTERS[ seq(1:num_col_classes) ], size=col_num, replace=TRUE ) )
+```
+
+```{r initialize_matrices}
+for ( i in 1:row_num ) {
+	curr_mean <- gene_abundances[ as.integer( gene_classes[i] ) ]
+	curr_sd <- curr_mean * rnorm( n=1, mean=0.15, sd=0.02 )
+	gene_matrix[i,] <- rnorm( n=col_num, mean=curr_mean, sd=curr_sd )
+}
+
+for ( j in 1:col_num ) {
+	curr_mean <- sample_factors[ as.integer( sample_classes[j] ) ]
+	curr_sd <- curr_mean * rnorm( n=1, mean=0.15, sd=0.02 )
+	
+	sample_matrix[,j] <- rnorm( n=row_num, mean=curr_mean, sd=curr_sd )
+}
+
+heatmap_matrix <- gene_matrix * sample_matrix
+rownames( heatmap_matrix ) <- paste0( "Gene_", seq( 1, row_num ) )
+colnames( heatmap_matrix ) <- paste0( "Ind_", seq( 1, col_num ) )
+
+write.csv( heatmap_matrix, file="small_matrix.csv" )
+```
+
+```{r write_row_col_annotation}
+gene_class_df <- data.frame( GeneClass = gene_classes )
+rownames( gene_class_df ) = rownames( heatmap_matrix )
+write.csv( gene_class_df, file="gene_class_annotation.csv" )
+
+sample_class_df <- data.frame( SampleClass=sample_classes )
+rownames( sample_class_df ) = colnames( heatmap_matrix )
+write.csv( sample_class_df, file="sample_class_annotation.csv" )
+```
+
+```{r session_information}
+Sys.Date()
+
+getwd()
+  
+sessionInfo()
+```
