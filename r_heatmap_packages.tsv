@@ -1,22 +1,22 @@
-Package	Function	Distribution	Input	Repository	Maintainer_Name	Maintainer_Email	Twitter
-ComplexHeatmap	Heatmap	Bioconductor	matrix	https://github.com/jokergoo/ComplexHeatmap	Zuguang Gu	z.gu AT dkfz.de	
-d3heatmap	d3heatmap	CRAN	matrix	https://github.com/rstudio/d3heatmap	Joe Cheng	joe AT rstudio.com	
-EnrichedHeatmap	EnrichedHeatmap	Bioconductor	matrix	https://github.com/jokergoo/EnrichedHeatmap	Zuguang Gu	z.gu AT dkfz.de	
-fheatmap	fheatmap	CRAN	"matrix,filename"		Sivasish Sindiri	sentisci AT gmail.com	
-gapmap	gapmap	CRAN	matrix		Ryo Sakai	ryo AT vda-lab.be	
-ggplot2	geom_tile	CRAN	melted obj	https://github.com/tidyverse/ggplot2	Hadley Wickham	hadley AT rstudio.com	
-gplots	heatmap.2	CRAN	matrix	https://github.com/cran/gplots	Gregory R. Warnes	greg AT warnes.net	
-heatmap.plus	heatmap.plus	CRAN	matrix		Allen Day	allenday AT ucla.edu	
-heatmap3	heatmap3	CRAN	matrix		Shilin Zhao	shilin.zhao AT vanderbilt.edu	
-Heatmaply	ggheatmap	CRAN	"matrix,heatmapr obj"	https://github.com/talgalili/heatmaply	Tal Galili	tal.galili AT gmail.com	
-Heatplus	annHeatmap2	Bioconductor	matrix	https://github.com/alexploner/Heatplus	Alexander Ploner	Alexander.Ploner AT ki.se	
-iheatmapr	main_heatmap	devtools	matrix	https://github.com/AliciaSchep/iheatmapr	Alicia Schep	aschep AT gmail.com	AliciaSchep
-mcheatmaps	mcheatmaps	CRAN	matrix		Rafael Najmanovich	rafael.najmanovich AT usherbrooke.ca	
-NeatMap	heatmap1	CRAN	matrix		Satwik Rajaram	satwik AT gmail.com	
-NMF	aheatmap	CRAN	"matrix,eset"	http://github.com/renozao/NMF	Renaud Gaujoux	renaud AT tx.technion.ac.il	
-pairheatmap	pairheatmap	CRAN	matrix		Xiaoyong Sun	johnsunx1 AT gmail.com	
-pheatmap	pheatmap	CRAN	matrix	https://github.com/cran/pheatmap	Raivo Kolde	rkolde AT gmail.com	
-qtlcharts	iheatmap	CRAN	matrix	https://github.com/kbroman/qtlcharts	Karl Broman	kbroman AT biostat.wisc.edu	kwbroman
-stats	heatmap	base	matrix	https://svn.r-project.org/R			
-superheat	superheat	CRAN	matrix	https://github.com/rlbarter/superheat	Rebecca Barter	rebeccabarter AT berkley.edu	rlbarter
-vcfR	heatmap.bp	CRAN	matrix	https://github.com/knausb/vcfR	Brian J. Knaus	briank.lists AT gmail.com	
+Package	Function	Distribution	Input	Repository	Maintainer_Name	Maintainer_Email	Twitter	Status
+ComplexHeatmap	Heatmap	Bioconductor	matrix	https://github.com/jokergoo/ComplexHeatmap	Zuguang Gu	z.gu AT dkfz.de		
+d3heatmap	d3heatmap	Bioconductor	matrix	https://github.com/rstudio/d3heatmap	Joe Cheng	joe AT rstudio.com		
+EnrichedHeatmap	EnrichedHeatmap	Bioconductor	matrix	https://github.com/jokergoo/EnrichedHeatmap	Zuguang Gu	z.gu AT dkfz.de		
+fheatmap	fheatmap	CRAN	"matrix,filename"		Sivasish Sindiri	sentisci AT gmail.com		Deprecated
+gapmap	gapmap	CRAN	matrix		Ryo Sakai	ryo AT vda-lab.be		
+ggplot2	geom_tile	CRAN	melted obj	https://github.com/tidyverse/ggplot2	Hadley Wickham	hadley AT rstudio.com		
+gplots	heatmap.2	CRAN	matrix	https://github.com/cran/gplots	Gregory R. Warnes	greg AT warnes.net		
+heatmap.plus	heatmap.plus	CRAN	matrix		Allen Day	allenday AT ucla.edu		
+heatmap3	heatmap3	CRAN	matrix		Shilin Zhao	shilin.zhao AT vanderbilt.edu		
+Heatmaply	ggheatmap	CRAN	"matrix,heatmapr obj"	https://github.com/talgalili/heatmaply	Tal Galili	tal.galili AT gmail.com		
+Heatplus	annHeatmap2	Bioconductor	matrix	https://github.com/alexploner/Heatplus	Alexander Ploner	Alexander.Ploner AT ki.se		
+iheatmapr	main_heatmap	devtools	matrix	https://github.com/AliciaSchep/iheatmapr	Alicia Schep	aschep AT gmail.com	AliciaSchep	Development
+mcheatmaps	mcheatmaps	CRAN	matrix		Rafael Najmanovich	rafael.najmanovich AT usherbrooke.ca		
+NeatMap	heatmap1	CRAN	matrix		Satwik Rajaram	satwik AT gmail.com		
+NMF	aheatmap	CRAN	"matrix,eset"	http://github.com/renozao/NMF	Renaud Gaujoux	renaud AT tx.technion.ac.il		
+pairheatmap	pairheatmap	CRAN	matrix		Xiaoyong Sun	johnsunx1 AT gmail.com		
+pheatmap	pheatmap	CRAN	matrix	https://github.com/cran/pheatmap	Raivo Kolde	rkolde AT gmail.com		
+qtlcharts	iheatmap	CRAN	matrix	https://github.com/kbroman/qtlcharts	Karl Broman	kbroman AT biostat.wisc.edu	kwbroman	
+stats	heatmap	base	matrix	https://svn.r-project.org/R				
+superheat	superheat	CRAN	matrix	https://github.com/rlbarter/superheat	Rebecca Barter	rebeccabarter AT berkley.edu	rlbarter	
+vcfR	heatmap.bp	CRAN	matrix	https://github.com/knausb/vcfR	Brian J. Knaus	briank.lists AT gmail.com		
