@@ -1,0 +1,73 @@
+---
+title: "Test Heatmaps with no options - small heatmap"
+author: "E. Roberson"
+created: "April 26, 2017"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load_required_packages}
+library( readr )
+library( stringr )
+library( dplyr )
+library( reshape2 )
+```
+
+```{r helper_constants}
+figure_out_relpath <- "figures"
+dir.create( figure_out_relpath, showWarnings = FALSE )
+```
+
+```{r list_of_heatmaps}
+# we need to grab the most current version of our heatmap list from GitHub
+heatmap_list <- read_tsv( url("https://raw.githubusercontent.com/RobersonLab/drop_it_like_its_hot_r/master/r_heatmap_packages.tsv"), col_names=TRUE )
+```
+
+```{r small_heatmap_load}
+small_heatmap <- read_csv( file="small_matrix.csv", col_names=TRUE )
+
+small_mat <- small_heatmap %>%
+	dplyr::select( -X1 ) %>%
+	as.matrix( . )
+rownames( small_mat ) = small_heatmap$X1
+
+#gene_annotate <- read_csv( file="gene_class_annotation.csv", col_names=TRUE )
+#col_annotate <- read_csv( file="sample_class_annotation.csv", col_names=TRUE )
+```
+
+```{r make_heatmaps}
+for ( idx in 1:dim( heatmap_list )[1] ) {
+	curr_location <- heatmap_list[ idx, "Distribution" ] %>% as.character( . )
+	curr_package <- heatmap_list[ idx, "Package" ] %>% as.character( . )
+	curr_status <- heatmap_list[ idx, "Status" ] %>% as.character( . )
+	curr_function_name <- heatmap_list[ idx, "Function" ] %>% as.character( . )
+	
+	if ( !is.na( curr_status ) & curr_status == "Deprecated" ) next
+	
+	if ( as.character( heatmap_list[ idx, "MatrixMinInput" ] ) == "N" ) next
+	
+	if ( !( as.character( heatmap_list[ idx, "SimpleFigureOut" ] ) == "Y") ) next
+	
+	if ( curr_location != "base" ) library( curr_package, character.only=TRUE )
+	
+	curr_fxn <- get( curr_function_name, mode="function" )
+	
+	jpeg( filename = file.path( figure_out_relpath, paste0( curr_package, "_",  curr_function_name, "_base.jpeg" ) ), width=1650, height=1275, units="px" )
+	
+	print( curr_fxn( small_mat ) )
+	
+	dev.off()
+}
+```
+
+```{r session_information}
+Sys.Date()
+
+getwd()
+  
+sessionInfo()
+```
