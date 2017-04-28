@@ -23,39 +23,37 @@ Included here is a **basic** list of packages. If the input takes a single matri
 
 ## Accepts single matrix, image output
 
-Package | Function | Image
-------- | -------- | -----
-[ComplexHeatmap](https://github.com/jokergoo/ComplexHeatmap) | Heatmap | ![Heatmap img](figures/ComplexHeatmap_Heatmap_base.jpeg)
-[d3heatmap](https://github.com/rstudio/d3heatmap) | d3heatmap | 
-[gplots](https://github.com/cran/gplots) | heatmap.2 | ![heatmap.2 img](figures/gplots_heatmap.2_base.jpeg)
-heatmap.plus | heatmap.plus | ![heatmap.plus img](figures/heatmap.plus_heatmap.plus_base.jpeg)
-heatmap3 | heatmap3 | ![heatmap3 img](figures/heatmap3_heatmap3_base.jpeg)
-[heatmaply](https://github.com/talgalili/heatmaply) | heatmaply | 
-[Heatplus](https://github.com/alexploner/Heatplus) | annHeatmap2 | 
-[iheatmapr](https://github.com/AliciaSchep/iheatmapr) | main_heatmap | 
-NeatMap | heatmap1 | ![heatmap1 img](figures/NeatMap_heatmap1_base.jpeg)
-[NMF](http://github.com/renozao/NMF) | aheatmap | ![aheatmap img](figures/NMF_aheatmap_base.jpeg)
-[pheatmap](https://github.com/cran/pheatmap) | pheatmap | ![pheatmap img](figures/pheatmap_pheatmap_base.jpeg)
-[qtlcharts](https://github.com/kbroman/qtlcharts) | iheatmap | 
-[stats](https://svn.r-project.org/R) | heatmap | ![heatmap img](figures/stats_heatmap_base.jpeg)
-[superheat](https://github.com/rlbarter/superheat) | superheat | ![superheat img](figures/superheat_superheat_base.jpeg)
-[vcfR](https://github.com/knausb/vcfR) | heatmap.bp | ![heatmap.bp img](figures/vcfR_heatmap.bp_base.jpeg)
+| Package | Function | Image |
+| ------- | -------- | ----- |
+| [ComplexHeatmap](https://github.com/jokergoo/ComplexHeatmap) | Heatmap | ![Heatmap img](figures/ComplexHeatmap_Heatmap_base.jpeg)| |
+| [d3heatmap](https://github.com/rstudio/d3heatmap) | d3heatmap |  |
+| [gplots](https://github.com/cran/gplots) | heatmap.2 | ![heatmap.2 img](figures/gplots_heatmap.2_base.jpeg) |
+| heatmap.plus | heatmap.plus | ![heatmap.plus img](figures/heatmap.plus_heatmap.plus_base.jpeg) |
+| heatmap3 | heatmap3 | ![heatmap3 img](figures/heatmap3_heatmap3_base.jpeg) |
+| [heatmaply](https://github.com/talgalili/heatmaply) | heatmaply |  |
+| [Heatplus](https://github.com/alexploner/Heatplus) | annHeatmap2 |  |
+| [iheatmapr](https://github.com/AliciaSchep/iheatmapr) | main_heatmap |  |
+| NeatMap | heatmap1 | ![heatmap1 img](figures/NeatMap_heatmap1_base.jpeg) |
+| [NMF](http://github.com/renozao/NMF) | aheatmap | ![aheatmap img](figures/NMF_aheatmap_base.jpeg) |
+| [pheatmap](https://github.com/cran/pheatmap) | pheatmap | ![pheatmap img](figures/pheatmap_pheatmap_base.jpeg) |
+| [qtlcharts](https://github.com/kbroman/qtlcharts) | iheatmap |  |
+| [stats](https://svn.r-project.org/R) | heatmap | ![heatmap img](figures/stats_heatmap_base.jpeg) |
+| [superheat](https://github.com/rlbarter/superheat) | superheat | ![superheat img](figures/superheat_superheat_base.jpeg) |
+| [vcfR](https://github.com/knausb/vcfR) | heatmap.bp | ![heatmap.bp img](figures/vcfR_heatmap.bp_base.jpeg) |
 
 ## Accepts single matrix, interactive output
-Package | Function
-------- | --------
-[d3heatmap](https://github.com/rstudio/d3heatmap) | d3heatmap
-[heatmaply](https://github.com/talgalili/heatmaply) | heatmaply
-[Heatplus](https://github.com/alexploner/Heatplus) | annHeatmap2
-[iheatmapr](https://github.com/AliciaSchep/iheatmapr) | main_heatmap
-[qtlcharts](https://github.com/kbroman/qtlcharts) | iheatmap
+
+| [d3heatmap](https://github.com/rstudio/d3heatmap) | d3heatmap   |   |
+| [heatmaply](https://github.com/talgalili/heatmaply) | heatmaply   |   |
+| [Heatplus](https://github.com/alexploner/Heatplus) | annHeatmap2   |   |
+| [iheatmapr](https://github.com/AliciaSchep/iheatmapr) | main_heatmap   |   |
+| [qtlcharts](https://github.com/kbroman/qtlcharts) | iheatmap   |   |
 
 ## Multiple matrix input / other requirements
-Package | Function
-------- | --------
-[EnrichedHeatmap](https://github.com/jokergoo/EnrichedHeatmap) | EnrichedHeatmap
-gapmap | gapmap
-[ggplot2](https://github.com/tidyverse/ggplot2) | geom_tile
-mcheatmaps | mcheatmaps
-pairheatmap | pairheatmap
+
+| [EnrichedHeatmap](https://github.com/jokergoo/EnrichedHeatmap) | EnrichedHeatmap   |   |
+| gapmap | gapmap   |   |
+| [ggplot2](https://github.com/tidyverse/ggplot2) | geom_tile   |   |
+| mcheatmaps | mcheatmaps   |   |
+| pairheatmap | pairheatmap   |   |
 
