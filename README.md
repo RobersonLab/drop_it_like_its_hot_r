@@ -49,3 +49,13 @@ Package | Function
 [Heatplus](https://github.com/alexploner/Heatplus) | annHeatmap2
 [iheatmapr](https://github.com/AliciaSchep/iheatmapr) | main_heatmap
 [qtlcharts](https://github.com/kbroman/qtlcharts) | iheatmap
+
+## Multiple matrix input / other requirements
+Package | Function
+------- | --------
+[EnrichedHeatmap](https://github.com/jokergoo/EnrichedHeatmap) | EnrichedHeatmap
+gapmap | gapmap
+[ggplot2](https://github.com/tidyverse/ggplot2) | geom_tile
+mcheatmaps | mcheatmaps
+pairheatmap | pairheatmap
+
