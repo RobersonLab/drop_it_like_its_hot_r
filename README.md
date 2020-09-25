@@ -3,7 +3,7 @@
 This repository maintains a list of different heatmap options in R, including fully vetted packages in CRAN / Bioconductor as well as emerging packages with devtools.
 
 # Info
-The main information is stored in the [r_heatmap_packages.tsv](http://www.robersonlab.org/drop_it_like_its_hot_r/r_heatmap_packages.tsv) file.
+The main information is stored in the [r_heatmap_packages.tsv](https://github.com/RobersonLab/drop_it_like_its_hot_r/blob/master/r_heatmap_packages.tsv) file.
 
 * Package - name of the package.
 * Function - name of the function to plot a heatmap
