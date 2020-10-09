@@ -38,7 +38,8 @@ Included here is a **basic** list of packages. If the input takes a single matri
 |  | [iheatmapr](https://github.com/AliciaSchep/iheatmapr) | main_heatmap |  |
 |  | [qtlcharts](https://github.com/kbroman/qtlcharts) | iheatmap |  |
 | Deprecated | fheatmap | fheatmap |  |
-| Multi-matrix / other | [EnrichedHeatmap](https://github.com/jokergoo/EnrichedHeatmap) | EnrichedHeatmap |  |
+| Multi-matrix / other | [catmaply](https://github.com/VerkehrsbetriebeZuerich/catmaply) | catmaply |  |
+|  | [EnrichedHeatmap](https://github.com/jokergoo/EnrichedHeatmap) | EnrichedHeatmap |  |
 |  | gapmap | gapmap |  |
 |  | [ggplot2](https://github.com/tidyverse/ggplot2) | geom_tile |  |
 |  | mcheatmaps | mcheatmaps |  |
