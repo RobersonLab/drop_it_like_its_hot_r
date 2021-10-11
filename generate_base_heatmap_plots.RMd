@@ -48,6 +48,8 @@ for ( idx in 1:dim( heatmap_list )[1] ) {
 	
 	if ( !is.na( curr_status ) & curr_status == "Deprecated" ) next
 	
+	if ( is.na( heatmap_list[ idx, "MatrixMinInput" ] ) ) next
+	
 	if ( as.character( heatmap_list[ idx, "MatrixMinInput" ] ) == "N" ) next
 	
 	if ( !( as.character( heatmap_list[ idx, "SimpleFigureOut" ] ) == "Y") ) next
