@@ -25,6 +25,7 @@ Included here is a **basic** list of packages. If the input takes a single matri
 | Single matrix, simple image out | [ComplexHeatmap](https://github.com/jokergoo/ComplexHeatmap) | Heatmap | ![Heatmap](figures/ComplexHeatmap_Heatmap_base.jpeg) |
 |  | [gplots](https://github.com/cran/gplots) | heatmap.2 | ![heatmap.2](figures/gplots_heatmap.2_base.jpeg) |
 |  | heatmap.plus | heatmap.plus | ![heatmap.plus](figures/heatmap.plus_heatmap.plus_base.jpeg) |
+|  | heatmapFlex | heatmap.n2 | ![heatmapFlex](figures/heatmapFlex_heatmap.n2_base.jpeg) |
 |  | heatmap3 | heatmap3 | ![heatmap3](figures/heatmap3_heatmap3_base.jpeg) |
 |  | NeatMap | heatmap1 | ![heatmap1](figures/NeatMap_heatmap1_base.jpeg) |
 |  | [NMF](http://github.com/renozao/NMF) | aheatmap | ![aheatmap](figures/NMF_aheatmap_base.jpeg) |
