@@ -9,6 +9,7 @@ ggplot2	geom_tile	CRAN	melted obj	N	NA	https://github.com/tidyverse/ggplot2	Hadl
 gplots	heatmap.2	CRAN	matrix	Y	Y	https://github.com/cran/gplots	Gregory R. Warnes	greg AT warnes.net		
 heatmap.plus	heatmap.plus	CRAN	matrix	Y	Y		Allen Day	allenday AT ucla.edu		
 heatmap3	heatmap3	CRAN	matrix	Y	Y		Shilin Zhao	shilin.zhao AT vanderbilt.edu		
+heatmapFlex	heatmap.n2	CRAN	matrix	Y	Y		Vidal Fey	vidal.fey at gmail.com		
 heatmaply	heatmaply	CRAN	matrix,heatmapr obj	Y	N	https://github.com/talgalili/heatmaply	Tal Galili	tal.galili AT gmail.com		
 Heatplus	annHeatmap2	Bioconductor	matrix	Y	N	https://github.com/alexploner/Heatplus	Alexander Ploner	Alexander.Ploner AT ki.se		
 iheatmapr	main_heatmap	devtools	matrix	Y	N	https://github.com/AliciaSchep/iheatmapr	Alicia Schep	aschep AT gmail.com	AliciaSchep	Development
