@@ -32,6 +32,7 @@ Included here is a **basic** list of packages. If the input takes a single matri
 |  | [pheatmap](https://github.com/cran/pheatmap) | pheatmap | ![pheatmap](figures/pheatmap_pheatmap_base.jpeg) |
 |  | [stats](https://svn.r-project.org/R) | heatmap | ![heatmap](figures/stats_heatmap_base.jpeg) |
 |  | [superheat](https://github.com/rlbarter/superheat) | superheat | ![superheat](figures/superheat_superheat_base.jpeg) |
+|  | [tidyHeatmap](https://cran.r-project.org/web/packages/tidyHeatmap/index.html) | heatmap | ![tidyHeatmap](figures/tidyHeatmap_heatmap_base.jpeg) |
 |  | [vcfR](https://github.com/knausb/vcfR) | heatmap.bp | ![heatmap.bp](figures/vcfR_heatmap.bp_base.jpeg) |
 | Single matrix, interactive output | [d3heatmap](https://github.com/rstudio/d3heatmap) | d3heatmap |  |
 |  | [heatmaply](https://github.com/talgalili/heatmaply) | heatmaply |  |
