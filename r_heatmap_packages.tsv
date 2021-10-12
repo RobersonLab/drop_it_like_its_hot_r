@@ -21,4 +21,5 @@ pheatmap	pheatmap	CRAN	matrix	Y	Y	https://github.com/cran/pheatmap	Raivo Kolde	r
 qtlcharts	iheatmap	CRAN	matrix	Y	N	https://github.com/kbroman/qtlcharts	Karl Broman	kbroman AT biostat.wisc.edu	kwbroman	
 stats	heatmap	base	matrix	Y	Y	https://svn.r-project.org/R				
 superheat	superheat	CRAN	matrix	Y	Y	https://github.com/rlbarter/superheat	Rebecca Barter	rebeccabarter AT berkley.edu	rlbarter	
+tidyHeatmap	heatmap	CRAN	data.frame;tibble	Y	Y	https://github.com/stemangiola/tidyHeatmap	Stefano Mangiola	mangiolastefano AT gmail.com	steman_research	
 vcfR	heatmap.bp	CRAN	matrix	Y	Y	https://github.com/knausb/vcfR	Brian J. Knaus	briank.lists AT gmail.com		
