@@ -60,7 +60,17 @@ for ( idx in 1:dim( heatmap_list )[1] ) {
 	
 	jpeg( filename = file.path( figure_out_relpath, paste0( curr_package, "_",  curr_function_name, "_base.jpeg" ) ), width=1650, height=1275, units="px" )
 	
-	print( curr_fxn( small_mat ) )
+	if ( curr_function_name == "tidyHeatmap" ) {
+	  tidy_df <- melt( small_mat ) %>%
+	    dplyr::rename( element = Var1 ) %>%
+	    dplyr::rename( feature = Var2 ) %>%
+	    as_tibble( . )
+	    
+	  heatmap( tidy_df, element, feature, value )
+	} else
+	{
+	  print( curr_fxn( small_mat ) )
+	}
 	
 	dev.off()
 }
